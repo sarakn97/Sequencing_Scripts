@@ -9,7 +9,7 @@
 **Prep_fasta_files_for_PAML.py** - script to change file names, remove gaps and translate Fasta sequences to prepare to run PAML for evolutionary analysis.\
 **RSeQC.sh** - Runs Ribosome Removal program RSeQC on directory of files. (for RNA-Seq)\
 **STAR.sh** - Runs star alignment on indicated files. (for RNA-Seq)\
-**remove_seqs_by_length.py** - remove fasta files that dont meet certain length.\
+**remove_seqs_by_length.py** - remove fasta files that dont meet certain length.
 
 ## Date
 2024
