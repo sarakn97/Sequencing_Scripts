@@ -10,6 +10,6 @@
 **RSeQC.sh** - Runs Ribosome Removal program RSeQC on directory of files. (for RNA-Seq)\
 **STAR.sh** - Runs star alignment on indicated files. (for RNA-Seq)\
 **remove_seqs_by_length.py** - remove fasta files that dont meet certain length.
-
+**Find_Stop_Codons.py** - Find Sequences with Stop Codons in Open-Reading Frame in Fasta File, returns headers of fasta files with Stop Codons in ORF, run on CLI
 ## Date
 2024
