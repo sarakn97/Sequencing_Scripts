@@ -44,7 +44,7 @@ for record in records:
             record.seq,
             id=RecID
         )
-        print(record_final)
+        # print(record_final)
         fasta.append(record_final)
 
 # SAVE FILE
