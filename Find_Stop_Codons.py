@@ -23,6 +23,7 @@ def findStopCodons(orf):
             stopCodon.append(i + 1)
     return stopCodon
 
+
 records = SeqIO.parse(str(sys.argv[1]), "fasta")
 
 stops = []
@@ -32,5 +33,19 @@ for record in records:
 
 print(stops)
 
+#### update to remove stops from fasta
+records = SeqIO.parse(str(sys.argv[2]), "fasta")
 
+fasta = []
+for record in records:
+    RecID = record.id
+    if RecID not in stops:
+        record_final = SeqRecord(
+            record.seq,
+            id=RecID
+        )
+        print(record_final)
+        fasta.append(record_final)
 
+# SAVE FILE
+SeqIO.write(fasta, str(sys.argv[3]), "fasta")
